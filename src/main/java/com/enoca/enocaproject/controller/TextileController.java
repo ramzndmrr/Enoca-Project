@@ -17,6 +17,7 @@ public class TextileController {
 
     @GetMapping("/textiles")
     public ResponseEntity<?> getAll(){
+        System.out.println("deneneme");
         var response = textileService.getAll();
         return ResponseEntity.ok(response);
     }
